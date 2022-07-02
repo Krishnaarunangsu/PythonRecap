@@ -1,0 +1,1 @@
+# https://www.geeksforgeeks.org/apply-a-function-to-single-or-selected-columns-or-rows-in-pandas-dataframe/?ref=rp
