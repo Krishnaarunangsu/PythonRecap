@@ -13,3 +13,9 @@ print(f'Dataframe where column "a" =100:\n{df[df.a == 100]}')
 # get the rows where value of column 'a' is other than 100
 df_new = df[df.a != 100]
 print(f'Dataframe where column "a" !=100:\n{df_new}')
+
+# Modify the column 'a' where the value is 100
+df.loc[df['a'] == 100, 'a'] = 50
+print(f'Modified Dataframe:\n{df}')
+
+df["Texture"] = df["Texture"].replace(to_replace ="^l.*", value = 'loam', regex = True)
