@@ -1,0 +1,5 @@
+https://www.stackvidhya.com/drop-column-in-pandas/#:~:text=You%20can%20drop%20column%20in,%2C%20inplace%3DTrue)%20statement.&text=You%20can%20use%20the%20below,column%20from%20the%20pandas%20dataframe.
+https://www.machinelearningplus.com/pandas/pandas-drop-column-using-dataframe-drop/
+https://stackoverflow.com/questions/13411544/delete-a-column-from-a-pandas-dataframe
+https://www.geeksforgeeks.org/how-to-drop-one-or-multiple-columns-in-pandas-dataframe/
+https://sparkbyexamples.com/pandas/pandas-drop-columns-examples/
