@@ -170,3 +170,5 @@ print(f'Constants:\n{dir(constants)}')
 # The version string is stored under the __version__ attribute.
 print(f'Scipy Version:{scipy.__version__}')
 
+print(constants.inch)
+
