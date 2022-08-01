@@ -7,6 +7,6 @@ import numpy as np
 from scipy.stats import normaltest
 
 v = np.random.normal(size=100)
-res= normaltest(v)
+res = normaltest(v)
 
 print(f'Normal Test:{res}')

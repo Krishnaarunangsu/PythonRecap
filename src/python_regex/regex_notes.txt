@@ -1,0 +1,2 @@
+http://www.roblocher.com/technotes/regexp.html
+https://realpython.com/regex-python/

@@ -1,0 +1,8 @@
+https://docs.scipy.org/doc/scipy/tutorial/index.html
+https://www.tutorialspoint.com/scipy/index.htm
+https://www.w3schools.com/python/scipy/scipy_interpolation.php
+https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.csgraph.depth_first_order.html
+https://codingstreets.com/python-scipy-sparse-data/
+https://www.javatpoint.com/python-scipy
+https://www.guru99.com/scipy-tutorial.html
+https://intellipaat.com/blog/tutorial/python-tutorial/python-scipy/
