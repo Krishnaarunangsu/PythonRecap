@@ -2,8 +2,8 @@ import pandas as pd
 
 df = pd.DataFrame(
     {
-        'Animal': ['Falcon', 'Falcon', 'Parrot', 'Parrot'],
-        'Max Speed': [380., 370., 24., 26.]
+        'Animal': ['Falcon', 'Falcon', 'Parrot', 'Parrot', 'Sparrow', 'Falcon'],
+        'Max Speed': [380., 370., 24., 26., 70, 234]
     }
 )
 
