@@ -8,6 +8,6 @@ print(datacamp['course'])
 print('***************************************')
 print(datacamp[['course']])
 print('***************************************')
-#print(datacamp[[['course']]])
+# print(datacamp[[['course']]])
 datacamp.index = ["P", "Q", "R"]
 print(datacamp)
