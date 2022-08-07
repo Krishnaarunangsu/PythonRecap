@@ -1,5 +1,5 @@
-# Joining the Dataframe: If we want to join using the key columns, we need to set key to be the index in both df and other.
-# The joined DataFrame will have key as its index.
+# Joining the Dataframe: If we want to join using the key columns, we need to set key to be
+# the index in both df and other. The joined DataFrame will have key as its index.
 import pandas as pd
 
 df_1 = pd.DataFrame(

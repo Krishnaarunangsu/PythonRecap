@@ -1,6 +1,7 @@
 # Joining the Dataframe: Join DataFrames using their indexes.
 import pandas as pd
 
+# Dataframe-1
 df_1 = pd.DataFrame(
     {
         'key': ['K0', 'K1', 'K2', 'K3', 'K4', 'K5'],
@@ -17,7 +18,9 @@ df_2 = pd.DataFrame(
     }
 )
 
+# Dataframe-2
 print(f'Dataframe-2:\n{df_2}')
 
-dataframe_joined = df_1.join(df_2, lsuffix='_caller', rsuffix='_other')
+# Join Dataframe df2 with Dataframe 1
+dataframe_joined = df_1.join(other=df_2, lsuffix='_caller', rsuffix='_other')
 print(f'Dataframes after joining:\n{dataframe_joined}')

@@ -15,6 +15,8 @@ df1 = pd.DataFrame(
     ],
     columns=['id', 'value', 'colC', 'colD']
 )
+print(f'Dataframe-1:\n{df1}')
+print('**************************************')
 df2 = pd.DataFrame(
     [
         (1, 111, 10.1, 3),
@@ -26,11 +28,10 @@ df2 = pd.DataFrame(
     ],
     columns=['id', 'value', 'colE', 'colF']
 )
+print(f'Dataframe-2:\n{df2}')
+print('**************************************')
 
-print(f'Dataframe-1:\n{df1}')
-print(f'Dataframe-1:\n{df2}')
-
-# Inner Join
+# Cross Join
 # df1.merge(df2, how='inner', on='id')
 merged_dataframe = pd.merge(left=df1, right=df2, how='cross')
 

@@ -3,12 +3,12 @@ import pandas as pd
 
 # Creating and initialising a list
 values = [
-    ['Rohan', 455],
-    ['Elvish', 250],
-    ['Deepak', 495],
-    ['Soni', 400],
-    ['Radhika', 350],
-    ['Vansh', 450]
+            ['Rohan', 455],
+            ['Elvish', 250],
+            ['Deepak', 495],
+            ['Soni', 400],
+            ['Radhika', 350],
+            ['Vansh', 450]
 ]
 
 columns = ['Name', 'Total_Marks']
