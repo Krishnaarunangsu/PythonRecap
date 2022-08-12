@@ -16,7 +16,11 @@ data = pd.DataFrame({'Brand': ['Maruti', 'Hyundai', 'Tata',
                      'Mileage': [28, 27, 25, 26, 28,
                                  29, 24, 21, 24]})
 
-display(data)
+print(data)
+print('**************************')
+print(data.iloc[4])
+print('**************************')
+print(data.loc[4,'City'])
 
 # selecting the cars with Brand Maruti and mileage >25
-display(data.loc[(data.Brand == 'Maruti') & (data.Mileage > 25)])
+#display(data.loc[(data.Brand == 'Maruti') & (data.Mileage > 25)])
