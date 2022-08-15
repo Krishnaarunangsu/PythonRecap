@@ -1,3 +1,4 @@
+# numpy basics
 import numpy as np
 
 numpy_array_1 = np.arange(15).reshape(3, 5)

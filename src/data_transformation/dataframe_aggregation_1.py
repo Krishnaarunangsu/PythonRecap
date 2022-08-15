@@ -2,7 +2,7 @@
 import pandas as pd
 
 # Making Dataframe from CSV file
-df_nba = pd.read_csv("..\\..\\data\\csv\\nba.csv")
+df_nba = pd.read_csv("../dataframe_creation/nba.csv")
 print(f'NBA Dataframe-5 rows:\n{df_nba.head(n=5)}')
 print(f'***************************************************')
 # Dataframe columns
