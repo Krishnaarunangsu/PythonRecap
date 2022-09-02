@@ -1,6 +1,8 @@
 # Reading an Excel File in Pandas
 import pandas as pd
 
+df_excel_employee1 = pd.read_excel("../../../data/excel/records.xlsx")
+
 # Read the Employees Sheet of thw records.xlsx
 df_excel_employee = pd.read_excel("../../../data/excel/records.xlsx", sheet_name='Employees')
 
@@ -12,5 +14,5 @@ df_1 = pd.read_excel("..\\..\\..\\data\\excel\\records.xlsx")
 
 print(f'Employees Dataframe:\n{df_excel_employee}')
 print('***********************************************************')
-print(f'Car Dataframe:\n{df_excel_car}')
+print(f'Car Dataframe:\n{df_excel_car.describe()}')
 

@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 
 # Making Dataframe from CSV file
-df_nba = pd.read_csv("../dataframe_creation/nba.csv")
+df_nba = pd.read_csv("../../dataframe_creation/nba.csv")
 
 # applying groupby() function to group the data on team value.
 print(df_nba['Team'].unique())
