@@ -2,9 +2,10 @@
 import numpy as np
 
 # In Python Array is actually a list
-arr_1 = [1, 3, 4, 5, 6]
-print(f'The type of the data structure is:\n{type(arr_1)}')
-print('****************************************')
+list_1 = [1, 2, 3, 4, 5, 6]
+
 # Creating a Numpy Array from a list
-arr_2 = np.array(arr_1)
-print(f'The type of the data structure is:\n{type(arr_2)}')
+numpy_arr_1 = np.array(object=list_1)
+print(f'The numpy array is:{numpy_arr_1}')
+print('************************************************')
+print(f'The type of the data structure is:{type(numpy_arr_1)}')
