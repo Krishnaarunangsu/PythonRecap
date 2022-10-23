@@ -11,15 +11,19 @@ arr = np.array(
 
 # Printing type of arr object
 print("Array is of type: ", type(arr))
+print('***********************************************')
 
 # Printing array dimensions (axes)
 print("No. of dimensions: ", arr.ndim)
+print('***********************************************')
 
 # Printing shape of array
 print("Shape of array: ", arr.shape)
+print('***********************************************')
 
 # Printing size (total number of elements) of array
 print("Size of array: ", arr.size)
+print('***********************************************')
 
 # Printing type of elements in array
 print("Array stores elements of type: ", arr.dtype)

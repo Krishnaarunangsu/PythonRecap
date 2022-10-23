@@ -1,10 +1,8 @@
-# Python code to demonstrate the working of array()
 # Import numpy library
 import numpy as np
 # importing "array" for array operations
 import array
 
-# initializing array with array values
 # initializes array with signed integers
 arr_1 = array.array('i', [1, 2, 3])
 print(arr_1)
