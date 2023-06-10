@@ -1,6 +1,7 @@
 import sys
 import os
 from pyspark.sql import Row, SparkSession
+from pyspark.sql.functions import col
 
 os.environ['PYSPARK_PYTHON'] = sys.executable
 os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
@@ -108,4 +109,24 @@ if __name__=="__main__":
     print(f'All the rows in the Dataframe:')
     for row in df.collect()[0:df.count()]:
         print((row["State"]),",",str(row["Cases"]),",",str(row["Recovered"]),",",str(row["Deaths"]))
+    print('****************************************************************')
+    # retrieving data of all the columns
+    print('All the columns of the dataframe:')
+    for column in df.collect():
+        print(column["State"],",",column["Cases"], column["Recovered"], ",", column["Deaths"])
+    print('****************************************************************')
+    # Print the columns of the dataframe with the col function
+    # print(df.select(col("State")).show())
+    df.select(col("State"),col("Cases"),col('Recovered'), col("Deaths")).show()
 
+    data = [
+        ("James", 'Smith', 'USA', 'CA'),
+        ("Michael", 'Rose', 'USA', 'NY'),
+        ("Robert", 'Williams', 'USA', 'CA'),
+        ("Maria", 'Jones', 'USA', 'FL'),
+    ]
+    columns = ["firstname", "lastname", "country", "state"]
+    df_1 = spark.createDataFrame(data, schema=columns)
+    # df_1.show()
+    # df_1.select(col("State"),col("country")).show()
+    # print(df_1.select(col("firstname"), col("lastname")).show())
