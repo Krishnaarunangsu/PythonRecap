@@ -7,15 +7,47 @@ os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
 spark = SparkSession.builder.appName('SparkTutorial').getOrCreate()
 
 # Spark Context textFile function reads a file and returns a RDD
+# RDD-1
 baby_names=spark.sparkContext.textFile('..//..//data//csv//baby_names_reduced.csv')
-# print(baby_names)
+print(f'RDD-1:\n{baby_names.collect()}')
 
 # map
 # Map transformation returns a new RDD by applying a function to each element of this RDD
-rows = baby_names.map(lambda line: line.split(","))
+# RDD-2
+rows = baby_names.map(lambda line: line.split(" ,"))
+print(f'No of partitions:{rows.getNumPartitions()}')
+print('**********************************************************************')
+# List-1
 data_col=rows.collect()
-for row in data_col:
+print(f'List from RDD-2:\n{data_col}')
+print('**********************************************************************')
+for idx, row in enumerate(data_col):
+     # print(type(row))
+     # print(type(row[0]))
+     print('********************************List*******************************')
+     print(type(data_col[idx]))
+     print(data_col[idx])
+     print(type(row))
      print(row)
+     print('********************************String*******************************')
+     print(type(row[0]))
+     res: object=row[0]
+     #print(type(res))
+     print(row[0]) # String
+     x=res.split(",") # List
+     print('********************************After Splitting a String*******************************')
+     print(type(x))
+     print(x)
+     #print(res.split(","))
+     # List Comprehension
+     print('--------------------------List Comprehension----------------')
+     [print(y) for y in x]
+     print("----------------------------FOR LOOP------------------------")
+     for index, item in enumerate(x):
+          # print(index, item)
+           print(x[index])
+     print('##########################################################################')
+#     print(str(idx)+"-"+str(row[0]))
 # for row in rows:
 #     print(row)
 #for row in rows.take(rows.count()): print(row[1])
