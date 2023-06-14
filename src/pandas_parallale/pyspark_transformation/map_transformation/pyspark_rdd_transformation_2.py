@@ -10,11 +10,16 @@ spark = SparkSession.builder.appName('SparkTutorial').getOrCreate()
 # RDD-1
 baby_names=spark.sparkContext.textFile('..//..//data//csv//baby_names_reduced.csv')
 print(f'RDD-1:\n{baby_names.collect()}')
+print('*********************************************************************')
 
 # map
 # Map transformation returns a new RDD by applying a function to each element of this RDD
 # RDD-2
+#rows = baby_names.map(lambda line: line.split(" "))
+#rows = baby_names.map(lambda line: line.split(""))
+# rows = baby_names.map(lambda line: line.split(","))
 rows = baby_names.map(lambda line: line.split(" ,"))
+# for row in rows.take(rows.count()): print(row[1])
 print(f'No of partitions:{rows.getNumPartitions()}')
 print('**********************************************************************')
 # List-1
