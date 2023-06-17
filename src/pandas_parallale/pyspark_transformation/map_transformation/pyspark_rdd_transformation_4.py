@@ -8,7 +8,7 @@ spark = SparkSession.builder.appName('SparkTutorial').getOrCreate()
 
 # Spark Context textFile function reads a file and returns a RDD
 # RDD-1
-baby_names=spark.sparkContext.textFile('..//..//data//csv//baby_names_reduced.csv')
+baby_names=spark.sparkContext.textFile('..//..//..//..//data//csv//baby_names_reduced.csv')
 print(f'RDD to List:\n{baby_names.collect()}')
 print('*********************************************************************')
 
