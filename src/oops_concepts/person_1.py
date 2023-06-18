@@ -1,6 +1,6 @@
 class Person:
 
-    def __init__(self, name, gender,age, profession):
+    def __init__(self, name, gender, age, profession):
         """
         Initialization of data members (instance variables)
         Args:
@@ -34,10 +34,10 @@ class Person:
         """
         print(self.name, 'working as a', self.profession)
 
-if __name__=="__main__":
 
+if __name__ == "__main__":
     # Instance 1
-    person_1=Person("John", "M", 27,'Engineer')
+    person_1 = Person("John", "M", 27, 'Engineer')
 
     # Show Details
     person_1.show_person_details()

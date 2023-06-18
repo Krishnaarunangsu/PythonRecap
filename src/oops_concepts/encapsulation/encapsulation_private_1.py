@@ -26,7 +26,7 @@ class Derived(Base):
         Initialization
         """
         # Calling constructor of Base class
-        self.d=10
+        self.d = 10
         # print(f'Derived Class member:{self.d}')
         Base.__init__(self)
         # print("Calling private member of base class from the derived class: ")
@@ -52,6 +52,6 @@ print(f'Public member of the base class:{obj1.a}')
 
 # Uncommenting obj2 = Derived() will also raise an AttributeError as
 # private member of base class is called inside derived class
-obj2=Derived()
+obj2 = Derived()
 obj2.display_private_member_from_derived_class()
 obj2.display_private_member_from_base_class()
