@@ -7,13 +7,13 @@ class Bird:
 
 
 class Sparrow(Bird):
-    def flight(self,name:str):
+    def flight(self, name: str):
         print("Sparrows can fly.")
         print(f'Name of the Sparrow:{name}')
 
 
 class Ostrich(Bird):
-    def flight(self,country:str):
+    def flight(self, country: str):
         print("Ostriches cannot fly.")
         print(f'Country of the Ostrich:{country}')
 
