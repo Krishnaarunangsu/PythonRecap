@@ -2,7 +2,7 @@ class DemoClass:
     # constructor
     def __init__(self):
         # initializing instance variable
-        self.num=100
+        self.num = 100
 
     # a method
     def read_number(self):
