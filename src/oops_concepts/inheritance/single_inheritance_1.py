@@ -32,6 +32,7 @@ class Employee(Person):
 # Driver code
 emp = Person("Geek1")  # An Object of Person
 print(f'{emp.get_name()} and Employee Status:{emp.is_employee()}')
+print('***********************************************')
 
 emp = Employee("Geek2")  # An Object of Employee
 print(f'{emp.get_name()} and Employee Status:{emp.is_employee()}')
