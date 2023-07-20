@@ -1,13 +1,21 @@
 class DemoClass:
+    """
+        Demo Class
+    """
+    # Class Level Variable
     num = 101
 
-    # parameterized constructor
+    # Parameterized constructor
     def __init__(self, data):
+        # Instance Variable Assigning value of the parameter
         self.num = data
 
     # a method
     def read_number(self):
-        print(self.num)
+        """
+        Read the Number
+        """
+        print(f'Value of instance variable:{self.num}')
 
 
 # creating object of the class

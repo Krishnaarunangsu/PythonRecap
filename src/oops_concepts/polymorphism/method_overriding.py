@@ -13,9 +13,10 @@ class Sparrow(Bird):
 
 
 class Ostrich(Bird):
-    def flight(self, country: str):
+    def flight(self, country: str, run: bool):
         print("Ostriches cannot fly.")
         print(f'Country of the Ostrich:{country}')
+        print(f'Does it run?:{run}')
 
 
 obj_bird = Bird()
@@ -31,4 +32,4 @@ obj_spr.flight('Sparrow-1')
 print('*******************************************')
 
 obj_ost.intro()
-obj_ost.flight('Australia')
+obj_ost.flight('Australia', True)

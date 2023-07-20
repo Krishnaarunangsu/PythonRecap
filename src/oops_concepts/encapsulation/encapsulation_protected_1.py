@@ -9,7 +9,7 @@ class Base:
         self._a = 2
 
 
-# Creating a derived class
+# Creating a Derived class
 class Derived(Base):
     def __init__(self):
         """

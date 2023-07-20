@@ -1,7 +1,7 @@
 class DemoClass:
     demo_value = 3
 
-    # constructor
+    # default constructor
     def __init__(self):
         # initializing instance variable
         self.num = 100
