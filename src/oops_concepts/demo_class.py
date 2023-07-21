@@ -8,7 +8,7 @@ class DemoClass:
 
     # a method
     def read_number(self):
-        print(self.num)
+        print(f'Instance Variable Value:{self.num}')
         print('********************************************************************')
         print(f'Class Variable Value from Instance Method:{self.demo_value}')
 
