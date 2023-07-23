@@ -20,6 +20,8 @@ class Employee(Person):
 
     def print(self):
         print("Employee class has been called")
+        print('******************************************')
+        print(f'The Age of the employee:{self.age}')
 
 
 
