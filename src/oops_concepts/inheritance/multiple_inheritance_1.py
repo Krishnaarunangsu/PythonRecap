@@ -25,5 +25,7 @@ class Derived(Base1, Base2):
         print(self.str1, self.str2)
 
 
-ob = Derived()
-ob.print_strs()
+# Driver code
+if __name__=="__main__":
+    child = Derived()
+   #child.print_strs()

@@ -16,10 +16,11 @@ class Person(object):
     # To check if this person is an employee
     def is_employee(self):
         """
-
+        Deciding employee or not
         Returns:
 
         """
+        print("In Parent Class: Person")
         return False
 
 
@@ -31,13 +32,21 @@ class Employee(Person):
 
     # Here we return true
     def is_employee(self):
+        """
+        Deciding employee or not
+        Returns:
+
+        """
+        print("In Child Class: Employee")
         return True
 
 
-# Driver code
-emp = Person("Geek1")  # An Object of Person
-print(f'{emp.get_name()} and Employee Status:{emp.is_employee()}')
-print('***********************************************')
+    # Driver code
+if __name__=="__main__":
 
-emp = Employee("Geek2")  # An Object of Employee
-print(f'{emp.get_name()} and Employee Status:{emp.is_employee()}')
+    emp = Person("Geek1")  # An Object of Person
+    print(f'{emp.get_name()} and Employee Status:{emp.is_employee()}')
+    print('***********************************************')
+
+    emp = Employee("Geek2")  # An Object of Employee
+    print(f'{emp.get_name()} and Employee Status:{emp.is_employee()}')

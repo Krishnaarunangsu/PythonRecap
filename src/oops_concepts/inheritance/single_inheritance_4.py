@@ -5,27 +5,29 @@
 class Person(object):
 
     # __init__ is known as the constructor
-    def __init__(self, name, idnumber):
+    def __init__(self, name:str, id_no:int):
         self.name = name
-        self.idnumber = idnumber
+        self.id_no = id_no
 
     def display(self):
         print(self.name)
-        print(self.idnumber)
+        print(self.id_no)
 
 
 # child class
 class Employee(Person):
-    def __init__(self, name, idnumber, salary, post):
+    def __init__(self, name:str, id_no:int, salary:float, post:str):
         self.salary = salary
         self.post = post
 
         # invoking the __init__ of the parent class
-        Person.__init__(self, name, idnumber)
+        Person.__init__(self, name, id_no)
 
 
-# creation of an object variable or an instance
-a = Employee('Rahul', 886012, 200000, "Intern")
+# Driver code
+if __name__=="__main__":
+    # creation of an object variable or an instance
+    emp = Employee('Rahul', 886012, 200000, "Intern")
 
-# calling a function of the class Person using its instance
-a.display()
+    # calling a function of the class Person using its instance
+    emp.display()

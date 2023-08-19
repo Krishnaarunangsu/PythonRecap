@@ -19,16 +19,16 @@ class Employee(Person):
 
 
     def print(self):
-        print("Employee class has been called")
+        print("Employee 1 class has been called")
         print('******************************************')
         print(f'The Age of the employee:{self.age}')
 
 
+if __name__=="__main__":
+    employee_details = Employee("Mayank", 103, 20)
 
-employee_details = Employee("Mayank", 103, 20)
+    # calling parent class function
+    employee_details.display()
 
-# calling parent class function
-employee_details.display()
-
-# Calling child class function
-employee_details.print()
+    # Calling child class function
+    employee_details.print()

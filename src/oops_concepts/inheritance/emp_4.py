@@ -1,7 +1,8 @@
 from src.oops_concepts.inheritance.person_2 import Person
+from src.oops_concepts.inheritance.emp_2 import Employee
 
 
-class Employee(Person):
+class Employee(Employee):
     """
 
     """
@@ -17,12 +18,6 @@ class Employee(Person):
         self.id=id
         self.age=age
 
-
-    def print(self):
-        print("Employee 3 class has been called")
-
-    def display(self):
-        print(self.name, self.id,self.age)
 
 if __name__=="__main__":
     employee_details = Employee("Mayank", 103, 20)

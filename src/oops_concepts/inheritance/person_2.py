@@ -4,6 +4,12 @@ class Person(object):
 
     # Constructor
     def __init__(self, name, id):
+        """
+        Initialization
+        Args:
+            name:
+            id:
+        """
         self.name = name
         self.id = id
 
@@ -18,6 +24,7 @@ class Person(object):
 
 
 # Driver code
-# per = Person("Satyam", 102)  # An Object of Person
-# per.display()
-# print(per.status)
+if __name__=="__main__":
+    per = Person("Satyam", 102)  # An Object of Person
+    per.display()
+    print(per.status)
