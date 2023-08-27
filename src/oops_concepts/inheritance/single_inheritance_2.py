@@ -51,9 +51,9 @@ class Employee(Person):
     # Driver code
 if __name__=="__main__":
 
-    emp = Person("Geek1")  # An Object of Person
-    print(f'{emp.get_name()} and Employee Status:{emp.is_employee()}')
-    print('***********************************************')
+    #emp = Person("Geek1")  # An Object of Person
+    #print(f'{emp.get_name()} and Employee Status:{emp.is_employee()}')
+    #print('***********************************************')
 
     emp = Employee("Geek2", True)  # An Object of Employee
     print(f'{emp.get_name()} and Employee Status:{emp.is_employee()}')

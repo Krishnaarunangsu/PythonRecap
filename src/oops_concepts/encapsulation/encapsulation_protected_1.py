@@ -25,13 +25,13 @@ class Derived(Base):
         print(f'Calling modified protected member outside class: {self._a}')
 
 
-obj1 = Derived()
+if __name__=="__main__":
+    obj1 = Derived()
+    obj2 = Base()
 
-obj2 = Base()
+    # Calling protected member
+    # Can be accessed but should not be done due to convention
+    print(f'Accessing protected member of obj1 (from the derived class object): {obj1._a}')
 
-# Calling protected member
-# Can be accessed but should not be done due to convention
-print(f'Accessing protected member of obj1 (from the derived class object): {obj1._a}')
-
-# Accessing the protected variable outside
-print(f'Accessing protected member of obj2 (from the base class object):{obj2._a}')
+    # Accessing the protected variable outside
+    print(f'Accessing protected member of obj2 (from the base class object):{obj2._a}')

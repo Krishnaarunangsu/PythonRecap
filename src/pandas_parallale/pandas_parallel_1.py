@@ -9,5 +9,5 @@ df =  pd.DataFrame(
         "c":np.random.randint(0, 100, size=10000)
     }
 )
-pandarallel.initialize(progress_bar=True)
-df.parallel_apply(lambda x: x**2)
+# pandarallel.initialize(progress_bar=True)
+df.apply(lambda x: x**2)

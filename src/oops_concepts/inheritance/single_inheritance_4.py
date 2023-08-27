@@ -17,6 +17,8 @@ class Person(object):
 # child class
 class Employee(Person):
     def __init__(self, name:str, id_no:int, salary:float, post:str):
+        #self.name=name
+        #self.id_no=id_no
         self.salary = salary
         self.post = post
 
@@ -31,3 +33,5 @@ if __name__=="__main__":
 
     # calling a function of the class Person using its instance
     emp.display()
+    print(emp.salary)
+    print(emp.post)

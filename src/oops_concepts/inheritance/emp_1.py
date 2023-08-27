@@ -18,7 +18,7 @@ class Employee(Person):
         self.age=age
 
 
-    def print(self):
+    def print_age(self):
         print("Employee 1 class has been called")
         print('******************************************')
         print(f'The Age of the employee:{self.age}')
@@ -31,4 +31,4 @@ if __name__=="__main__":
     employee_details.display()
 
     # Calling child class function
-    employee_details.print()
+    employee_details.print_age()

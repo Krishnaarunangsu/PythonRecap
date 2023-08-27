@@ -1,40 +1,35 @@
 class Tokenizer:
     """Tokenize text"""
     def __init__(self, text):
-        print('Start Tokenizer.__init__()')
-        self.tokens = text.split()
-        print('End Tokenizer.__init__()')
+        self.tokens = text.split() # Splitting the Words
 
 
 class WordCounter(Tokenizer):
     """Count words in text"""
     def __init__(self, text):
-        print('Start WordCounter.__init__()')
         super().__init__(text)
-        self.word_count = len(self.tokens)
-        print('End WordCounter.__init__()')
+        self.word_count = len(self.tokens) # Getting the token counts
 
 
 class Vocabulary(Tokenizer):
     """Find unique words in text"""
     def __init__(self, text):
-        print('Start init Vocabulary.__init__()')
         super().__init__(text)
-        self.vocab = set(self.tokens)
-        print('End init Vocabulary.__init__()')
+        self.vocab = set(self.tokens) # Getting the unique tokens
 
 
 class TextDescriber(WordCounter, Vocabulary):
     """Describe text with multiple metrics"""
     def __init__(self, text):
-        print('Start init TextDescriber.__init__()')
         super().__init__(text)
-        print('End init TextDescriber.__init__()')
+
 
 
 if __name__=="__main__":
     td = TextDescriber('row row row your boat')
-    print('--------')
-    print(td.tokens)
-    print(td.vocab)
-    print(td.word_count)
+
+    print(f'Words:{td.tokens}')
+    print('--------------------')
+    print(f'Unique Words:{td.vocab}')
+    print('---------------------')
+    print(f'Total Word Count:{td.word_count}')
