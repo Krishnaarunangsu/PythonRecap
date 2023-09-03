@@ -3,8 +3,9 @@ from pyspark.sql import SQLContext
 import pandas as pd
 from pyspark.ml.feature import VectorAssembler
 from pyspark.ml.regression import LinearRegression
+import matplotlib.pyplot as plt
 import six
-# from pandas.plotting import scatter_matrix
+import joblib
 
 sc = SparkContext()
 sqlContext = SQLContext(sc)
@@ -23,6 +24,8 @@ print(company_df.describe().toPandas().transpose())
 # Finding the Correlation Between Independent Variables
 numeric_features = [t[0] for t in company_df.dtypes if t[1] == 'int' or t[1] == 'double']
 sampled_data = company_df.select(numeric_features).sample(False, 0.8).toPandas()
+
+# Figure 1
 axs = pd.plotting.scatter_matrix(sampled_data, figsize=(10, 10))
 n = len(sampled_data.columns)
 for i in range(n):
@@ -34,7 +37,11 @@ for i in range(n):
     horizontal.xaxis.label.set_rotation(90)
     horizontal.set_xticks(())
 
-#sampled_data.plot.scatter(x='length', y='width')
+# Figure 2
+# sampled_data.set_index('Rank').plot()
+sampled_data.set_index('Previous Rank').plot()
+# sampled_data.set_index('Number of Employees').plot()
+plt.show()
 
 # Correlation Between Independent Variables
 for i in company_df.columns:
@@ -52,8 +59,11 @@ splits = t_company_df.randomSplit([0.7, 0.3])
 train_df = splits[0]
 test_df = splits[1]
 
+print('Model Outputs')
 # Linear Regression
 lr = LinearRegression(featuresCol = 'features', labelCol='Number of Employees', maxIter=10, regParam=0.3, elasticNetParam=0.8)
 lr_model = lr.fit(train_df)
 print("Coefficients: " + str(lr_model.coefficients))
 print("Intercept: " + str(lr_model.intercept))
+
+# lr.save(sc,"C:\Arunangsu\PythonRecap\src\pandas_parallale\pyspark_ml_model1.h5")
