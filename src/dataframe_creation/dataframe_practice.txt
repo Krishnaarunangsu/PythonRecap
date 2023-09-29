@@ -1,0 +1,7 @@
+https://datatofish.com/create-nan-values-pandas-dataframe/
+https://saturncloud.io/blog/how-to-get-column-index-from-column-name-in-python-pandas/
+https://www.geeksforgeeks.org/split-pandas-dataframe-by-column-index/
+https://sparkbyexamples.com/pandas/pandas-iterate-over-series/
+https://stackoverflow.com/questions/48211358/python-store-multiple-dataframe-in-list
+https://note.nkmk.me/en/python-pandas-nan-extract/
+https://www.geeksforgeeks.org/working-with-missing-data-in-pandas/
