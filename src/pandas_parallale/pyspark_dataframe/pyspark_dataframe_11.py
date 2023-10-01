@@ -22,6 +22,6 @@ df2.filter(df2.name.like("%rose%")).show()
 
 
 # rlike - SQL RLIKE pattern (LIKE with Regex)
-#This check case insensitive
+#This check case-insensitive
 df2.filter(df2.name.rlike("(?i)^*rose$")).show()
 

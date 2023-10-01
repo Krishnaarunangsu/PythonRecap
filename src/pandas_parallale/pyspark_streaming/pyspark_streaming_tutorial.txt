@@ -1,0 +1,12 @@
+https://medium.com/analytics-vidhya/apache-spark-structured-streaming-with-pyspark-b4a054a7947d
+https://levelup.gitconnected.com/spark-streaming-with-python-f88ff662feb0
+https://towardsdatascience.com/learn-how-to-use-spark-ml-and-spark-streaming-3a731485d052
+https://www.udemy.com/course/apache-spark-streaming-with-python-and-pyspark/
+https://www.analyticsvidhya.com/blog/2019/12/streaming-data-pyspark-machine-learning-model/
+https://github.com/tirthajyoti/Spark-with-Python/blob/master/Python-and-Spark-for-Big-Data-master/Spark%20Streaming/Introduction%20to%20Spark%20Streaming.ipynb
+https://www.macrometa.com/event-stream-processing/spark-structured-streaming
+https://anujsyal.com/spark-streaming-with-python
+https://www.youtube.com/watch?v=iFmJ1MQA-E8
+https://www.youtube.com/watch?v=RLfTxtgeVhM
+https://www.toptal.com/apache/apache-spark-streaming-twitter
+https://sparkbyexamples.com/apache-spark-streaming-tutorial/
