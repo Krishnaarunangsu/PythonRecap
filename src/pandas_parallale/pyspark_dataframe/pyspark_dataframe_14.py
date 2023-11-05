@@ -27,5 +27,6 @@ df_2.show()
 # df.select(*columns,lit(0.3).alias("bonus_percent1")).show()
 # df.select(*columns).show()
 df_2.select(*columns).show()
+df_2.select('*').show()
 
 
