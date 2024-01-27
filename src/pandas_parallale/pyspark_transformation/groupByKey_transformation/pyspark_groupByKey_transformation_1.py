@@ -17,7 +17,7 @@ print('*********************************************************************')
 # RDD-2
 #rows = baby_names.map(lambda line: line.split(" "))
 #rows = baby_names.map(lambda line: line.split(""))
-rows = baby_names.map(lambda line: line.split(","))
+# rows = baby_names.map(lambda line: line.split(","))
 #crows = baby_names.map(lambda line: line.split(" ,"))
 # for row in rows.take(rows.count()): print(row[1])
 rows = baby_names.map(lambda line: line.split(","))
