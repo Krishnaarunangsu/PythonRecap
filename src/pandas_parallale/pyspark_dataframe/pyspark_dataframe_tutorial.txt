@@ -1,1 +1,2 @@
 https://www.geeksforgeeks.org/creating-a-pyspark-dataframe/
+https://www.geeksforgeeks.org/converting-a-pyspark-dataframe-column-to-a-python-list/
