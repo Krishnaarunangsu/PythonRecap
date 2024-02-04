@@ -1,2 +1,8 @@
 https://www.geeksforgeeks.org/creating-a-pyspark-dataframe/
 https://www.geeksforgeeks.org/converting-a-pyspark-dataframe-column-to-a-python-list/
+
+RDD
+https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.RDD.map.html
+
+Dataframe
+https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.DataFrame.unionByName.html
