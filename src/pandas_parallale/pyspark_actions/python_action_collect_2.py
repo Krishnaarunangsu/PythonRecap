@@ -8,22 +8,25 @@ os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
 spark = SparkSession.builder.appName('Jagannath').getOrCreate()
 
 #  Create Empty Student Class-Metadata
-Student=Row("firstName","lastName","email","age","rollNumber")
+Student: Row=Row("firstName","lastName","email","age","rollNumber")
 print(len(Student))
 print(Student.__len__())
 
 # Create Rows of the Dataframe/Table
-student1=Student('Krishna', 'Narayan','xyz@abc.com',100,11122)
-student2=Student('Tirupati', 'Vishnu','xyz@abc.com',100,11122)
-student3=Student('Kalki', 'Narasimha','xyz@abc.com',100,11122)
-student4=Student('Dhananjay', 'Gopal','xyz@abc.com',100,11122)
-student5=Student('Hari', 'Jagannath','xyz@abc.com',100,11122)
+student1: Row=Student('Krishna', 'Narayan','xyz@abc.com',100,11122)
+student2: Row=Student('Tirupati', 'Vishnu','xyz@abc.com',100,11122)
+student3: Row=Student('Kalki', 'Narasimha','xyz@abc.com',100,11122)
+student4: Row=Student('Dhananjay', 'Gopal','xyz@abc.com',100,11122)
+student5: Row =Student('Hari', 'Jagannath','xyz@abc.com',100,11122)
 print(student1.firstName)
 
 student_data=[student1,student2,student3, student4, student5]
-# Create RDD from the above
+
+# Create RDD from the above List
 rdd_student=spark.sparkContext.parallelize(student_data)
+print(rdd_student)
 print(f'Student Data:{rdd_student.collect()}')
+print(rdd_student.flatMap(lambda x:[x]).collect())
 
 # df = spark.createDataFrame([
 #     Row(a=1, b=2., c='string1', d=date(2000, 1, 1), e=datetime(2000, 1, 1, 12, 0)),

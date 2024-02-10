@@ -6,3 +6,5 @@ https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.RDD.map.ht
 
 Dataframe
 https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.DataFrame.unionByName.html
+
+https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/functions.html

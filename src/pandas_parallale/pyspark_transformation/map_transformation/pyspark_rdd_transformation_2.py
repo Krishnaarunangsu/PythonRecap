@@ -2,16 +2,19 @@ import sys
 import os
 from pyspark.sql import Row, SparkSession
 
+import pandas as pd
+
 os.environ['PYSPARK_PYTHON'] = sys.executable
 os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
 spark = SparkSession.builder.appName('SparkTutorial').getOrCreate()
 
 # Spark Context textFile function reads a file and returns a RDD
 # RDD-1
-baby_names=spark.sparkContext.textFile('..//..//data//csv//baby_names_reduced.csv')
-print(f'RDD-1:\n{baby_names.collect()}')
+baby_names=spark.sparkContext.textFile('..//..//..//..//data//csv//baby_names_reduced.csv')
+#df=pd.read_csv('..//..//..//..//data//csv//baby_names_reduced.csv')
+#print(df)
+# print(f'nt(baby_names.foreach(print())RDD-1:\n{baby_names.collect()}')
 print('*********************************************************************')
-
 # map
 # Map transformation returns a new RDD by applying a function to each element of this RDD
 # RDD-2
@@ -65,3 +68,6 @@ for idx, row in enumerate(data_col):
 # #print(rdd_2)
 # for element in rdd_2.collect():
 #     print(element)
+
+
+
