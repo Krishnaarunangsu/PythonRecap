@@ -8,3 +8,7 @@ Dataframe
 https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.DataFrame.unionByName.html
 
 https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/functions.html
+
+https://www.geeksforgeeks.org/merge-two-dataframes-with-different-amounts-of-columns-in-pyspark/?ref=ml_lbp
+
+https://www.geeksforgeeks.org/pyspark-split-dataframe-into-equal-number-of-rows/?ref=ml_lbp

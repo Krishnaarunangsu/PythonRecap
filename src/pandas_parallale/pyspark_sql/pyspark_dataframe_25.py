@@ -13,11 +13,14 @@ os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
 
 spark = SparkSession.builder.appName('sum as new_col').getOrCreate()
 
+# Create Dataframe from list of tuples
 list_1=[
     ('x', 5, 3, 7),
     ('Y', 3, 3, 6),
     ('Z', 5, 2, 6)
 ]
+
+# Dataframe Columns
 schema=['A', 'B', 'C', 'D']
 
 df=None
@@ -25,6 +28,7 @@ try:
     df = spark.createDataFrame(list_1,schema)
 except ValueError as ve:
     print(f'Some issue with value:{list_1}')
+
 # print the dataframe
 if df is not  None:
     df.show()
@@ -34,8 +38,7 @@ if df is not  None:
 # select everything from table df_col1 and
 # create new sum  column as " select_method_sum".
 df_col1 = df.select('*',
-                         (df["B"]+df["C"]+df['D']).
-                         alias("select_method_sum"))
+                         (df["B"]+df["C"]+df['D']).alias("select_method_sum"))
 df_col1.show()
 df_col1.printSchema()
 

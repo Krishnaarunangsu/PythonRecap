@@ -6,8 +6,12 @@ os.environ['PYSPARK_PYTHON'] = sys.executable
 os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
 spark = SparkSession.builder.appName('SparkTutorial').getOrCreate()
 
+# parallelize is Spark RDD Transformation
 rdd_1=spark.sparkContext.parallelize([1, 2, 3])
+
+# flatMap is Spark RDD Transformation
 rdd_2=rdd_1.flatMap(lambda x: [x,x,x])
+
 dataset=rdd_2.collect()
 dataset_count=rdd_2.count()
 print(f'The dataset is:{dataset}')
