@@ -25,13 +25,19 @@ def map_transformation(list_num: list) -> int:
         print(f'The input list is:{list_num}')
         rdd_1 = spark.sparkContext.parallelize(list_num)
         # rdd_1.foreach(print)
-        print(rdd_1.map(lambda x: (x, x * x)).collect())
+        # print(rdd_1.map(lambda x: (x, x * x)).collect())
         #print(rdd_1.map(calc_range).collect())
-        rdd_2=rdd_1.map(calc_range)
+        print('RDD after Map Transformation rdd_transformed_1:')
+        rdd_transformed_1= rdd_1.map(lambda x: (x, x * x))
+        rdd_transformed_1.foreach(print)
+
+        print('RDD after Map Transformation rdd_transformed_2:')
+        rdd_transformed_2=rdd_1.map(calc_range)
+        rdd_transformed_2.foreach(print)
         #rdd_2 = spark.sparkContext.parallelize([1, 2, 3])
         #print(rdd_2.map(lambda x: (x, x * x)).collect())
         # data_collected_rdd=spark.sparkContext.parallelize([3, 4, 5]).map(lambda x: range(1, x)).collect()
-        data_collected_rdd = rdd_2.collect()
+        data_collected_rdd = rdd_transformed_2.collect()
         return data_collected_rdd
     except ValueError as ve:
         raise ValueError('Input List is Empty')

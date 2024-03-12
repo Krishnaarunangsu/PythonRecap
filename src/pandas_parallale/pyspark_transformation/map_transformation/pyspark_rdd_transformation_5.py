@@ -16,8 +16,9 @@ def map_transformation(list_num: list) -> int:
     try:
         print(f'The input list is:{list_num}')
         rdd_1 = spark.sparkContext.parallelize(list_num)
-        first_number = rdd_1.first()
+        print('Each element of the RDD is:')
         rdd_1.foreach(print)
+        first_number = rdd_1.first()
         return first_number
     except ValueError as ve:
         raise ValueError('Input List is Empty')
