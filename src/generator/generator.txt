@@ -1,0 +1,5 @@
+https://www.geeksforgeeks.org/generators-in-python/
+https://realpython.com/introduction-to-python-generators/
+https://www.programiz.com/python-programming/generator
+https://stackoverflow.com/questions/1756096/understanding-generators-in-python
+https://builtin.com/software-engineering-perspectives/python-generators
