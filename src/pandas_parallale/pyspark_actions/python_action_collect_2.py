@@ -24,9 +24,9 @@ student_data=[student1,student2,student3, student4, student5]
 
 # Create RDD from the above List
 rdd_student=spark.sparkContext.parallelize(student_data)
-print(rdd_student)
-print(f'Student Data:{rdd_student.collect()}')
-print(rdd_student.flatMap(lambda x:[x]).collect())
+print(f'RDD Student:{rdd_student}')
+print(f'Student Data:\n{rdd_student.collect()}')
+print(f'Student Data:\n{rdd_student.flatMap(lambda x:[x]).collect()}')
 
 # df = spark.createDataFrame([
 #     Row(a=1, b=2., c='string1', d=date(2000, 1, 1), e=datetime(2000, 1, 1, 12, 0)),
