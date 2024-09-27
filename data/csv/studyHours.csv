@@ -1,0 +1,16 @@
+Gender	Age	StudyHoursPerWeek	AttendanceRate	GPA	Major	PartTimeJob	ExtraCurricularActivities
+Female	19	39	71.1	3.84	Engineering	Yes	Yes
+Male	19	39	63.5	3.53	Science	Yes	Yes
+Female	18	38	76.99	3.85	Arts	No	Yes
+Female	18	38	67.58	2.66	Education	No	Yes
+Female	24	39	73.37	3.53	Science	Yes	No
+Male	23	39	92.64	2.85	Engineering	Yes	Yes
+Female	24	38	91.0	2.32	Arts	No	Yes
+Male	18	39	53.73	3.33	Arts	No	No
+Male	18	39	50.05	2.0	Business	Yes	Yes
+Male	23	39	88.64	3.24	Engineering	No	No
+Female	19	38	98.16	2.15	Arts	Yes	Yes
+Male	21	38	77.92	2.13	Education	No	Yes
+Female	24	39	88.39	2.99	Engineering	Yes	Yes
+Female	19	38	72.32	3.36	Education	Yes	No
+Female	18	39	84.3	2.8	Business	Yes	Yes
